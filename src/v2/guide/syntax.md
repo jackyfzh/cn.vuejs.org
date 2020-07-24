@@ -79,8 +79,12 @@ Mustache 语法不能作用在 HTML attribute 上，遇到这种情况应该使�
 ### 使用 JavaScript 表达式
 
 迄今为止，在我们的模板中，我们一直都只绑定简单的 property 键值。但实际上，对于所有的数据绑定，Vue.js 都提供了完全的 JavaScript 表达式支持。
+你完全可以在表达式中输入类似这样的内容：
 
 ``` html
+
+{{ $route.params.id }}
+
 {{ number + 1 }}
 
 {{ ok ? 'YES' : 'NO' }}
